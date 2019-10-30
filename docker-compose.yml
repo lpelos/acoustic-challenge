@@ -1,35 +1,18 @@
 version: "3.7"
 
-x-angular-common: &angular-common
-  build:
-    context: ./angular
-    dockerfile: ./Dockerfile.dev
-  env_file:
-    - ./.env.dev
-    - ./.env.local
-  environment:
-    NODE_ENV: development
-  volumes:
-    - ./angular/:/app/
-  command: >
-    bash -c "
-      npm install &&
-      npm run start"
-
 services:
   ng:
-    <<: *angular-common
+    build:
+      context: ./angular
+      dockerfile: ./Dockerfile.dev
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./angular/:/app/
     ports:
       - 4200:4200
       - 8888:8888
-  
-  ng-universal:
-    <<: *angular-common
-    ports:
-      - 4000:4000
-      - 9229:9229
     command: >
       bash -c "
         npm install &&
-        npm run build:ssr &&
-        npm run serve:ssr --host 0.0.0.0"
+        npm run start"
