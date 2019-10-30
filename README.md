@@ -28,12 +28,6 @@ Follow config instructions in the README.md of each service.
 ./update <GIT_BRANCH>
 ```
 
-## Adding new submodules
-
-```
-git submodule add <REPOSITORY_URI> <FOLDER_NAME>
-```
-
 ## Build Services Images
 
 ```
