@@ -22,48 +22,49 @@ git submodule update --init
 
 Follow config instructions in the README.md of each service.
 
-## Updating the submodules
+## Updating submodules
 
 ```
 ./update <GIT_BRANCH>
 ```
 
-## Build Services Images
+## Services
+
+| Name  | Technology |
+|-------|:----------:|
+| ng    |  Angular   |
+| react |  React     |
+
+### Build Images
 
 ```
 docker-compose build <SERVICE NAME>
 ```
 
-## Creating Services Containers
+### Creating Containers
 
 ```
 docker-compose up <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
 ```
 
-Use option `-d` for running on background. Ex:
-
-```
-docker-compose up -d <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
-```
-
-## Destroying Services Containers
+### Destroying Containers
 
 1. find services containers names with `docker ps -a`
 1. destroy them with `docker rm -f <CONTAINER NAME 1> [<CONTAINER NAME 1> ...]`
 
-## Starting Services Containers
+### Starting Containers
 
 ```
 docker-compose start <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
 ```
 
-## Stopping Services Containers
+### Stopping Services Containers
 
 ```
 docker-compose stop <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
 ```
 
-## Logs
+### Logs
 
 ```
 docker-compose logs <SERVICE_NAME>
