@@ -1,8 +1,8 @@
 # Acoustic Code Challenge
 
 This is a code challenge made for [Acoustic](https://acoustic.co/) which
-consists in SPA applications that consumes Acoustic Content APIs and render the
-content returned using different front-end techologies such as React and
+consists in SPA applications that consumes Acoustic Content APIs and renders
+the content returned using different front-end techologies such as React and
 Angular.
 
 To be able to run these projects locally, it's highly recommended that you use
