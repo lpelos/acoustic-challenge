@@ -1,0 +1,6 @@
+[submodule "angular"]
+	path = angular
+	url = git@github.com:lpelos/acoustic-challenge-angular.git
+[submodule "react"]
+	path = react
+	url = git@github.com:lpelos/acoustic-challenge-react.git
