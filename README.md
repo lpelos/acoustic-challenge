@@ -17,7 +17,7 @@ them on their respectives `docker-compose.yml`.
 ## Configuration
 
 ```
-git submodule update --init
+$ git submodule update --init
 ```
 
 Follow config instructions in the README.md of each service.
@@ -25,7 +25,7 @@ Follow config instructions in the README.md of each service.
 ## Updating submodules
 
 ```
-./update <GIT_BRANCH>
+$ ./update <GIT_BRANCH>
 ```
 
 ## Services
@@ -38,13 +38,13 @@ Follow config instructions in the README.md of each service.
 ### Build Images
 
 ```
-docker-compose build <SERVICE NAME>
+$ docker-compose build <SERVICE NAME>
 ```
 
 ### Creating Containers
 
 ```
-docker-compose up <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
+$ docker-compose up <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
 ```
 
 ### Destroying Containers
@@ -55,19 +55,19 @@ docker-compose up <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
 ### Starting Containers
 
 ```
-docker-compose start <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
+$ docker-compose start <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
 ```
 
 ### Stopping Services Containers
 
 ```
-docker-compose stop <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
+$ docker-compose stop <SERVICE_NAME_1> [<SERVICE_NAME_2> ...]
 ```
 
 ### Logs
 
 ```
-docker-compose logs <SERVICE_NAME>
+$ docker-compose logs <SERVICE_NAME>
 ```
 
 ## Protips
